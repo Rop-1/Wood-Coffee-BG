@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .product-card .card {
+        margin-bottom: 20px;
+    }
+    header ul li{
+        padding-left: 0;
+    }
+    .menu {
+        display: none;
+    }
+    .navi .icon {
+        display: block;
+    }
+    .menu-mobile li, .about .col-lg-9 p{
+        text-align: center;
+    }
+    .navi.responsive .menu-mobile {
+        display: flex;
+    }
+    .about .col-lg-3 p{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
