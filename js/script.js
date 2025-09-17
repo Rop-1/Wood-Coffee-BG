@@ -17,3 +17,23 @@ document.addEventListener('DOMContentLoaded', function () {
 function responsive() {
     document.getElementById("NavBar").classList.toggle("responsive");
 }
+
+  const overlay = document.getElementById("cart");
+  const form = document.getElementById("checkoutForm");
+  const confirmBtn = document.getElementById("confirmBtn");
+
+  function openCart() {
+    overlay.style.display = "flex";
+  }
+  function closeCart() {
+    overlay.style.display = "none";
+  }
+  function removeItem(btn) {
+    btn.closest(".cart-item").remove();
+  }
+  function goHome() {
+    window.location.href = "index.html"; // főoldal
+  }
+  form.addEventListener("input", () => {
+    confirmBtn.disabled = !form.checkValidity();
+  });

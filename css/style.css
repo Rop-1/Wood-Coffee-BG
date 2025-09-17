@@ -15,7 +15,7 @@ body, .btn, .btn:hover{
     background-size: cover;
     background-repeat: no-repeat;
 }
-body, header a, .uveg:hover, .overlay, .email-updates input::placeholder, footer a{
+body, header a, .uveg:hover, .overlay, .cart input::placeholder, .cart input, .email-updates input::placeholder, footer a{
     color: #fff;
 }
 header a, footer a {
@@ -124,4 +124,29 @@ main video,.about img {
 }
 footer .col-lg-3 li{
     margin-bottom: 20px;
+}
+.cart {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content:center;
+    align-items:center;
+    z-index: 1002; 
+}
+.cart-modal {
+    max-width: 900px;
+    width: 90%;
+    border-radius: 20px;
+    overflow:hidden;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+.cart-item span { 
+    cursor:pointer;
+    color:#11E2F3;
 }

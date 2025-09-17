@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/880ebffc1b1bfd828888236a/script.js"></script>
+    <script id="cookieyes" type="text/javascript"
+        src="https://cdn-cookieyes.com/client_data/880ebffc1b1bfd828888236a/script.js"></script>
     <script src="https://kit.fontawesome.com/b33957f698.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Wood Coffee</title>
 </head>
+
 <body>
     <header>
         <div class="container navi my-4 csempe" id="NavBar">
@@ -26,7 +29,7 @@
                     <li><a href="#">Rólunk</a></li>
                     <li><a href="#">Galéria</a></li>
                     <li><a href="#"><i class="bi bi-person"></i></a></li>
-                    <li><a href="#"><i class="bi bi-cart"></i></a></li>
+                    <li><a href="#" onclick="openCart()"><i class="bi bi-cart"></i></a></li>
                 </ul>
                 <a href="javascript:void(0);" class="icon" onclick="responsive()">
                     <i class="fa fa-bars"></i>
@@ -43,6 +46,51 @@
         </div>
     </header>
     <main>
+        <section>
+            <div class="cart" id="cart">
+                <div class="cart-modal csempe">
+                    <div class="row w-100">
+                        <div class="col-lg-7 p-4 border-end">
+                            <h3><i class="bi bi-cart"></i> Kosár tartalma</h3>
+                            <div class="cart-item d-flex justify-content-between align-items-center mb-3">
+                                <span onclick="goHome()" class="fw-bold">Karamellás Frappuchino</span>
+                                <div>
+                                    <input type="number" value="1" min="1" class="uveg form-control d-inline-block w-auto">
+                                    <button class="btn btn-sm btn-danger uveg" onclick="removeItem(this)"><i class="bi bi-trash"></i></button>
+                                </div>
+                            </div>
+                            <div class="cart-item d-flex justify-content-between align-items-center mb-3">
+                                <span onclick="goHome()" class="fw-bold">Pumkin Spice Latte</span>
+                                <div>
+                                    <input type="number" value="2" min="1" class="uveg form-control d-inline-block w-auto">
+                                    <button class="btn btn-sm btn-danger uveg" onclick="removeItem(this)"><i class="bi bi-trash"></i></button>
+                                </div>
+                            </div>
+                            <div class="cart-item d-flex justify-content-between align-items-center mb-3">
+                                <span onclick="goHome()" class="fw-bold">Jeges kávé</span>
+                                <div>
+                                    <input type="number" value="1" min="1" class="uveg form-control d-inline-block w-auto">
+                                    <button class="btn btn-sm btn-danger uveg" onclick="removeItem(this)"><i class="bi bi-trash"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 p-4">
+                            <h3><i class="bi bi-database-fill"></i> Adatok megadása</h3>
+                            <form id="checkoutForm">
+                                <input type="name" class="uveg form-control mb-2" placeholder="Név" required>
+                                <input type="email" class="uveg form-control mb-2" placeholder="Email" required>
+                                <input type="text" class="uveg form-control mb-2" placeholder="Cím" required>
+                                <input type="number" class="uveg form-control mb-2" placeholder="Irányítószám" required>
+                                <input type="tel" class="uveg form-control mb-3" placeholder="Telefonszám" required>
+                                <button type="button" class=" btn btn-primary uveg w-100 mb-2" id="confirmBtn" disabled
+                                    onclick="goHome()">Megerősítés</button>
+                            </form>
+                            <button class="uveg btn btn-danger w-100" onclick="closeCart()">Bezárás</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section>
             <div class="container">
                 <div class="row">
@@ -85,10 +133,12 @@
                 <div class="row" id="product-row">
                     <div class="col-lg-4 col-md-6  product-card">
                         <div class="card glass-effect" data-bs-toggle="tooltip" data-bs-placement="top">
-                            <img src="img/products/caramelfrappuchino.jpg" class="card-img-top" alt="Karamellás Frappuchino">
+                            <img src="img/products/caramelfrappuchino.jpg" class="card-img-top"
+                                alt="Karamellás Frappuchino">
                             <div class="overlay">
                                 <h5 class="text-white fw-bold">Karamellás Frappuchino</h5>
-                                <p class="text-white fw-bold">Krémes, jeges kávékülönlegesség lágy karamellszósszal és tejszínhabbal.</p>
+                                <p class="text-white fw-bold">Krémes, jeges kávékülönlegesség lágy karamellszósszal és
+                                    tejszínhabbal.</p>
                             </div>
                         </div>
                     </div>
@@ -97,7 +147,8 @@
                             <img src="img/products/pumkinspicelatte.jpg" class="card-img-top" alt="Pumkin Spice Latte">
                             <div class="overlay">
                                 <h5 class="text-white fw-bold">Pumkin Spice Latte</h5>
-                                <p class="text-white fw-bold">Illatos, fűszeres latte sütőtökös ízvilággal, őszi hangulatban.</p>
+                                <p class="text-white fw-bold">Illatos, fűszeres latte sütőtökös ízvilággal, őszi
+                                    hangulatban.</p>
                             </div>
                         </div>
                     </div>
@@ -106,7 +157,8 @@
                             <img src="img/products/icedcoffe.jpg" class="card-img-top" alt="Jeges kávé">
                             <div class="overlay">
                                 <h5 class="text-white fw-bold">Jeges kávé</h5>
-                                <p class="text-white fw-bold">Frissítő, hidegen tálalt kávé, amely energiát ad a nap bármely szakában.</p>
+                                <p class="text-white fw-bold">Frissítő, hidegen tálalt kávé, amely energiát ad a nap
+                                    bármely szakában.</p>
                             </div>
                         </div>
                     </div>
@@ -123,10 +175,12 @@
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4 product-card">
                         <div class="card glass-effect" data-bs-toggle="tooltip" data-bs-placement="top">
-                            <img src="img/products/tojasosbaconoscroassaint.jpg" class="card-img-top" alt="Tojásos Baconos Croassaint">
+                            <img src="img/products/tojasosbaconoscroassaint.jpg" class="card-img-top"
+                                alt="Tojásos Baconos Croassaint">
                             <div class="overlay">
                                 <h5 class="text-white fw-bold">Tojásos Baconos Croassaint</h5>
-                                <p class="text-white fw-bold">Vajpuha croissant sós töltelékkel: tojással, ropogós baconnel és friss koktélparadicsommal.</p>
+                                <p class="text-white fw-bold">Vajpuha croissant sós töltelékkel: tojással, ropogós
+                                    baconnel és friss koktélparadicsommal.</p>
                             </div>
                         </div>
                     </div>
@@ -150,7 +204,9 @@
                 <div class="row">
                     <div class="col-lg-12 py-4">
                         <h2 class="text-center pb-2">Iratkozz fel a hírlevelünkre!</h2>
-                        <p class="text-center pb-2">Add meg az Email címed, hogy feliratkozz a hírlevelünkre! Információkat kaphatsz a legfrissebb kedvezményekről, illetve egy azonnali 10%-os kupont is szerezhetsz a feliratkozásoddal! Értesülj elsőként a legfrissebb ajánlatainkról.</p>
+                        <p class="text-center pb-2">Add meg az Email címed, hogy feliratkozz a hírlevelünkre!
+                            Információkat kaphatsz a legfrissebb kedvezményekről, illetve egy azonnali 10%-os kupont is
+                            szerezhetsz a feliratkozásoddal! Értesülj elsőként a legfrissebb ajánlatainkról.</p>
                         <form class="form d-flex">
                             <input type="text" class="form-control uveg me-5" placeholder="Email-cím">
                             <button class="uveg btn btn-primary" id="load-more-btn">Feliratkozás</button>
@@ -189,11 +245,13 @@
                 </div>
             </div>
             <div class="row">
-                <p class="text-center fw-bold">2025 &bull; Wood Coffee &copy; Minden jog fenntartva! Üzemeltető szervezet: Mesterek</p>
+                <p class="text-center fw-bold">2025 &bull; Wood Coffee &copy; Minden jog fenntartva! Üzemeltető
+                    szervezet: Mesterek</p>
             </div>
         </div>
     </footer>
 
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
