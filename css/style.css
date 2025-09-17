@@ -15,14 +15,14 @@ body, .btn, .btn:hover{
     background-size: cover;
     background-repeat: no-repeat;
 }
-body, header a, .uveg:hover, .overlay{
+body, header a, .uveg:hover, .overlay, .email-updates input::placeholder, footer a{
     color: #fff;
 }
-header a {
+header a, footer a {
     text-decoration: none;
 }
-header a:hover{
-    color: #555;
+header a:hover, footer a:hover{
+    color: #a1a1a1;
     transition: all .15s ease-in;
 }
 header {
@@ -104,11 +104,24 @@ main video,.about img {
     gap: 20px;
 }
 .menu-mobile {
-    list-style-type: none;
+    
     flex-direction: column;
     text-align: right;
     gap: 10px;
 }
+.menu-mobile, footer li{
+    list-style-type: none;
+}
 .navi .icon{
     font-size: 28px;
+}
+.email-updates .col-lg-12, footer .row{
+    width: 90%;
+    margin: 0 auto;
+}
+.email-updates input{
+    width: 85%;
+}
+footer .col-lg-3 li{
+    margin-bottom: 20px;
 }

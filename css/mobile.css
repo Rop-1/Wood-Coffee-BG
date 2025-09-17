@@ -21,4 +21,10 @@
         width: 75%;
         margin: 0 auto;
     }
+    footer .col-lg-3{
+        text-align: center;
+    }
+    footer ul{
+        padding-left: 0;
+    }
 }
