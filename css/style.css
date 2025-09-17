@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+}
+::-webkit-scrollbar{
+    background: #555;
+    width: 8px;
+}
+body, .btn, .btn:hover{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body, header a, .uveg:hover, .overlay{
+    color: #fff;
+}
+header a {
+    text-decoration: none;
+}
+header a:hover{
+    color: #555;
+    transition: all .15s ease-in;
+}
+header {
+    z-index: 1000;
+    position: sticky;
+    top: 1.5%;
+}
+header ul li{
+    padding-left: 25px;
+}
+.uveg,.csempe, .overlay, ::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.card.glass-effect, .overlay, ::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+}
+.uveg, .csempe{
+    border-radius: 20px;
+    position: relative;
+}
+.uveg:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+main video,.about img {
+    border-radius: 25px;
+}
+.card.glass-effect {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.card.glass-effect, .btn{
+    border: none;
+}
+.card-img-top {
+    width: 100%;
+    height: 100%;
+}
+.product-card .card:hover {
+    transform: translateY(-10px);
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.product-card:hover .overlay {
+    transform: translateY(0);
+}
+#load-more-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+#extra-products, .menu-mobile, .navi .icon {
+    display: none;
+}
+.nav-header, .menu{
+    display: flex;
+}
+.nav-header {
+    justify-content: space-between;
+    align-items: center;
+}
+.menu, .menu-mobile{
+    margin: 0;
+    padding: 0;
+}
+.menu {
+    list-style: none;
+    gap: 20px;
+}
+.menu-mobile {
+    list-style-type: none;
+    flex-direction: column;
+    text-align: right;
+    gap: 10px;
+}
+.navi .icon{
+    font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .product-card .card {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    header ul li{
+        padding-left: 0;
+    }
+    .menu {
+        display: none;
+    }
+    .navi .icon {
+        display: block;
+    }
+    .menu-mobile li, .about .col-lg-9 p{
+        text-align: center;
+    }
+    .navi.responsive .menu-mobile {
+        display: flex;
+    }
+    .about .col-lg-3 p{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
