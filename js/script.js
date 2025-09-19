@@ -32,8 +32,22 @@ function responsive() {
     btn.closest(".cart-item").remove();
   }
   function goHome() {
-    window.location.href = "index.html"; // főoldal
+    window.location.href = "index.html";
   }
   form.addEventListener("input", () => {
     confirmBtn.disabled = !form.checkValidity();
+  });
+
+  const prof_overlay = document.getElementById("profile");
+  const prof_form = document.getElementById("prof-checkoutForm");
+  const prof_confirmBtn = document.getElementById("prof-confirmBtn");
+
+  function openProfile() {
+    prof_overlay.style.display = "flex";
+  }
+  function closeProfile() {
+    prof_overlay.style.display = "none";
+  }
+  prof_form.addEventListener("input", () => {
+    prof_confirmBtn.disabled = !prof_form.checkValidity();
   });

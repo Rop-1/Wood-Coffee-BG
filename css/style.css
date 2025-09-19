@@ -10,12 +10,15 @@ body {
     background: #555;
     width: 8px;
 }
+header img, footer img{
+    filter: invert();
+}
 body, .btn, .btn:hover{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-body, header a, .uveg:hover, .overlay, .cart input::placeholder, .cart input, .email-updates input::placeholder, footer a{
+body, header a, .uveg:hover, .overlay, .cart input::placeholder, .cart input, .email-updates input::placeholder, footer a, .cart-item span{
     color: #fff;
 }
 header a, footer a {
@@ -146,7 +149,6 @@ footer .col-lg-3 li{
     backdrop-filter: blur(20px);
     box-shadow: 0 8px 32px rgba(0,0,0,0.1);
 }
-.cart-item span { 
+.cart-item span{ 
     cursor:pointer;
-    color:#11E2F3;
 }
