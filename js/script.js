@@ -14,6 +14,35 @@ document.addEventListener('DOMContentLoaded', function () {
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 });
 
+const modal = document.getElementById("pdfModal");
+const linkf = document.getElementById("aszf-link");
+const links = document.getElementById("adatved-link");
+const linkt = document.getElementById("szolgfelt-link");
+const closeBtn = document.getElementById("closeModal");
+
+linkf.addEventListener("click", function(e) {
+  e.preventDefault();
+  modal.style.display = "block";
+});
+links.addEventListener("click", function(e) {
+  e.preventDefault();
+  modal.style.display = "block";
+});
+linkt.addEventListener("click", function(e) {
+  e.preventDefault();
+  modal.style.display = "block";
+});
+
+closeBtn.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
 function responsive() {
     document.getElementById("NavBar").classList.toggle("responsive");
 }
@@ -21,7 +50,6 @@ function responsive() {
   const overlay = document.getElementById("cart");
   const form = document.getElementById("checkoutForm");
   const confirmBtn = document.getElementById("confirmBtn");
-
   function openCart() {
     overlay.style.display = "flex";
   }
@@ -41,7 +69,6 @@ function responsive() {
   const prof_overlay = document.getElementById("profile");
   const prof_form = document.getElementById("prof-checkoutForm");
   const prof_confirmBtn = document.getElementById("prof-confirmBtn");
-
   function openProfile() {
     prof_overlay.style.display = "flex";
   }
