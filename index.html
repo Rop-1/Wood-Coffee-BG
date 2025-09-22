@@ -26,8 +26,8 @@
                 <ul class="menu">
                     <li><a href="index.html">Kezdőlap</a></li>
                     <li><a href="#">Kávéfajták</a></li>
-                    <li><a href="#">Rólunk</a></li>
-                    <li><a href="#">Galéria</a></li>
+                    <li><a href="#rolunk">Rólunk</a></li>
+                    <li><a href="#galeria">Galéria</a></li>
                     <li><a href="#" onclick="openProfile()"><i class="bi bi-person"></i></a></li>
                     <li><a href="#" onclick="openCart()"><i class="bi bi-cart"></i></a></li>
                 </ul>
@@ -38,8 +38,8 @@
             <ul class="menu-mobile py-3">
                 <li><a href="index.html">Kezdőlap</a></li>
                 <li><a href="#">Kávéfajták</a></li>
-                <li><a href="#">Rólunk</a></li>
-                <li><a href="#">Galéria</a></li>
+                <li><a href="#rolunk">Rólunk</a></li>
+                <li><a href="#galeria">Galéria</a></li>
                 <li><a href="#" onclick="openProfile()"><i class="bi bi-person"></i></a></li>
                 <li><a href="#" onclick="openCart()"><i class="bi bi-cart"></i></a></li>
             </ul>
@@ -50,8 +50,8 @@
             <div class="cart" id="profile">
                 <div class="cart-modal csempe py-3">
                     <div class="row w-100">
-                    <h3 class="text-center"><i class="bi bi-person"></i> Profilod</h3>
-                       <div class="col-lg-6 p-4">
+                        <h3 class="text-center"><i class="bi bi-person"></i> Profilod</h3>
+                        <div class="col-lg-6 p-4">
                             <h3><i class="bi bi-box-arrow-in-right"></i> Bejelentkezés</h3>
                             <form id="checkoutForm">
                                 <input type="email" class="uveg form-control mb-2" placeholder="E-mail" required>
@@ -64,25 +64,28 @@
                                 <input type="name" class="uveg form-control mb-2" placeholder="Név" required>
                                 <input type="email" class="uveg form-control mb-2" placeholder="E-mail" required>
                                 <input type="tel" class="uveg form-control mb-2" placeholder="Telefonszám" required>
-                                <input type="number" class="uveg form-control mb-2" placeholder="Születési dátum" required>
+                                <input type="number" class="uveg form-control mb-2" placeholder="Születési dátum"
+                                    required>
                                 <input type="number" class="uveg form-control mb-2" placeholder="Irányítószám" required>
                             </form>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 p-4">
-                                <button type="button" class=" btn btn-primary uveg w-100 mb-2 bg-success" id="confirmBtn" onclick="goHome()">Bejelentkezés</button>
+                            <button type="button" class=" btn btn-primary uveg w-100 mb-2 bg-success" id="confirmBtn"
+                                onclick="goHome()">Bejelentkezés</button>
                         </div>
                         <div class="col-lg-6 p-4">
-                                <button type="button" class=" btn btn-primary uveg w-100 mb-2 bg-success" id="confirmBtn" onclick="goHome()">Regisztráció</button>
+                            <button type="button" class=" btn btn-primary uveg w-100 mb-2 bg-success" id="confirmBtn"
+                                onclick="goHome()">Regisztráció</button>
                         </div>
                     </div>
                     <div class="row px-4">
                         <button class="uveg btn btn-danger w-100 bg-danger" onclick="closeProfile()">Kilépés</button>
                     </div>
 
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -95,22 +98,28 @@
                             <div class="cart-item d-flex justify-content-between align-items-center mb-3">
                                 <span onclick="goHome()" class="fw-bold">Karamellás Frappuchino</span>
                                 <div>
-                                    <input type="number" value="1" min="1" class="uveg form-control d-inline-block w-auto">
-                                    <button class="btn btn-sm btn-danger uveg" onclick="removeItem(this)"><i class="bi bi-trash"></i></button>
+                                    <input type="number" value="1" min="1"
+                                        class="uveg form-control d-inline-block w-auto">
+                                    <button class="btn btn-sm btn-danger uveg" onclick="removeItem(this)"><i
+                                            class="bi bi-trash"></i></button>
                                 </div>
                             </div>
                             <div class="cart-item d-flex justify-content-between align-items-center mb-3">
                                 <span onclick="goHome()" class="fw-bold">Pumkin Spice Latte</span>
                                 <div>
-                                    <input type="number" value="2" min="1" class="uveg form-control d-inline-block w-auto">
-                                    <button class="btn btn-sm btn-danger uveg" onclick="removeItem(this)"><i class="bi bi-trash"></i></button>
+                                    <input type="number" value="2" min="1"
+                                        class="uveg form-control d-inline-block w-auto">
+                                    <button class="btn btn-sm btn-danger uveg" onclick="removeItem(this)"><i
+                                            class="bi bi-trash"></i></button>
                                 </div>
                             </div>
                             <div class="cart-item d-flex justify-content-between align-items-center mb-3">
                                 <span onclick="goHome()" class="fw-bold">Jeges kávé</span>
                                 <div>
-                                    <input type="number" value="1" min="1" class="uveg form-control d-inline-block w-auto">
-                                    <button class="btn btn-sm btn-danger uveg" onclick="removeItem(this)"><i class="bi bi-trash"></i></button>
+                                    <input type="number" value="1" min="1"
+                                        class="uveg form-control d-inline-block w-auto">
+                                    <button class="btn btn-sm btn-danger uveg" onclick="removeItem(this)"><i
+                                            class="bi bi-trash"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +131,8 @@
                                 <input type="text" class="uveg form-control mb-2" placeholder="Cím" required>
                                 <input type="number" class="uveg form-control mb-2" placeholder="Irányítószám" required>
                                 <input type="tel" class="uveg form-control mb-3" placeholder="Telefonszám" required>
-                                <button type="button" class=" btn btn-primary uveg w-100 mb-2 bg-success" id="confirmBtn" onclick="goHome()">Megerősítés</button>
+                                <button type="button" class=" btn btn-primary uveg w-100 mb-2 bg-success"
+                                    id="confirmBtn" onclick="goHome()">Megerősítés</button>
                             </form>
                             <button class="uveg btn btn-danger w-100 bg-danger" onclick="closeCart()">Bezárás</button>
                         </div>
@@ -140,34 +150,23 @@
             </div>
         </section>
         <section>
-            <h1 class="text-center py-5">Rólunk</h1>
+            <h1 class="text-center py-5" id="rolunk">Rólunk</h1>
             <div class="container py-2 csempe about">
                 <div class="row">
                     <div class="col-lg-3">
                         <p><img class="w-100 mt-3" src="img/stock.jpg" alt="Coffee" title="Coffe Fotó"></p>
                     </div>
                     <div class="col-lg-9 fs-5 mt-2">
-                        <p>A Wood Coffee 2024-ben indult el azzal a céllal, hogy egyedülálló kávéélményt kínáljon
-                            mindazoknak, akik nemcsak a kiváló minőségű kávét, hanem a fenntarthatóságot és a természet
-                            közelségét is értékelik. Cégünk egyesíti a hagyományos kávékészítési technikákat és a modern
-                            ízélményeket, miközben a fenntartható forrásokból származó alapanyagokat és a környezetbarát
-                            csomagolást tartjuk szem előtt.</p>
-                        <p class="hide">A Wood Coffee nemcsak egy kávézó, hanem egy életérzés. Mi hiszünk abban, hogy minden egyes
-                            csésze kávé egy új élményt, egy új történetet mesél el. Kávénkat prémium, etikus forrásból
-                            származó szemekből készítjük, és minden egyes pörkölésnél arra törekszünk, hogy kiemeljük a
-                            kávé természetes gazdagságát és karakterét.</p>
-                        <p class="hide">A természet és a fenntarthatóság iránti elköteleződésünk nemcsak a kávéinkban, hanem a
-                            vállalat minden aspektusában megjelenik. Képviseljük azt a modern szemléletet, hogy a
-                            kávézás nem csupán egy napi szokás, hanem egy lehetőség arra, hogy kapcsolatba lépjünk a
-                            természetes világgal, és tiszteletben tartsuk környezetünket.</p>
-                        <p class="hide">Csatlakozz te is a Wood Coffee közösséghez, és tapasztald meg, hogyan hozhatunk egy kis darab
-                            természetet minden egyes csészébe!</p>
+                        <p>A Wood Coffee 2024-ben indult el azzal a céllal, hogy egyedülálló kávéélményt kínáljon mindazoknak, akik nemcsak a kiváló minőségű kávét, hanem a fenntarthatóságot és a természet közelségét is értékelik. Cégünk egyesíti a hagyományos kávékészítési technikákat és a modern ízélményeket, miközben a fenntartható forrásokból származó alapanyagokat és a környezetbarátcsomagolást tartjuk szem előtt.</p>
+                        <p class="hide">A Wood Coffee nemcsak egy kávézó, hanem egy életérzés. Mi hiszünk abban, hogy minden egyes csésze kávé egy új élményt, egy új történetet mesél el. Kávénkat prémium, etikus forrásbólszármazó szemekből készítjük, és minden egyes pörkölésnél arra törekszünk, hogy kiemeljük akávé természetes gazdagságát és karakterét.</p>
+                        <p class="hide">A természet és a fenntarthatóság iránti elköteleződésünk nemcsak a kávéinkban, hanem a vállalat minden aspektusában megjelenik. Képviseljük azt a modern szemléletet, hogy a kávézás nem csupán egy napi szokás, hanem egy lehetőség arra, hogy kapcsolatba lépjünk a természetes világgal, és tiszteletben tartsuk környezetünket.</p>
+                        <p class="hide">Csatlakozz te is a Wood Coffee közösséghez, és tapasztald meg, hogyan hozhatunk egy kis darab természetet minden egyes csészébe!</p>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <h2 class="text-center py-5 mt-3">Termékeink</h2>
+            <h2 class="text-center py-5 mt-3" id="galeria">Termékeink</h2>
             <div class="container py-2">
                 <div class="row" id="product-row">
                     <div class="col-lg-4 col-md-6  product-card">
@@ -243,9 +242,7 @@
                 <div class="row">
                     <div class="col-lg-12 py-4">
                         <h2 class="text-center pb-2">Iratkozz fel a hírlevelünkre!</h2>
-                        <p class="text-center pb-2">Add meg az Email címed, hogy feliratkozz a hírlevelünkre!
-                            Információkat kaphatsz a legfrissebb kedvezményekről, illetve egy azonnali 10%-os kupont is
-                            szerezhetsz a feliratkozásoddal! Értesülj elsőként a legfrissebb ajánlatainkról.</p>
+                        <p class="text-center pb-2">Add meg az Email címed, hogy feliratkozz a hírlevelünkre! Információkat kaphatsz a legfrissebb kedvezményekről, illetve egy azonnali 10%-os kupont is szerezhetsz a feliratkozásoddal! Értesülj elsőként a legfrissebb ajánlatainkról.</p>
                         <form class="form d-flex">
                             <input type="text" class="form-control uveg me-5" placeholder="Email-cím">
                             <button class="uveg btn btn-primary" id="load-more-btn">Feliratkozás</button>
@@ -265,12 +262,12 @@
                     <ul>
                         <li><a href="index.html">Kezdőlap</a></li>
                         <li><a href="#">Kávéfajták</a></li>
-                        <li><a href="#">Rólunk</a></li>
+                        <li><a href="#rolunk">Rólunk</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
                     <ul>
-                        <li><a href="#">Galéria</a></li>
+                        <li><a href="#galeria">Galéria</a></li>
                         <li><a href="#">GY.I.K</a></li>
                         <li><a href="#">Kapcsolat</a></li>
                     </ul>
@@ -284,8 +281,7 @@
                 </div>
             </div>
             <div class="row">
-                <p class="text-center fw-bold">2025 &bull; Wood Coffee &copy; Minden jog fenntartva! Üzemeltető
-                    szervezet: Mesterek</p>
+                <p class="text-center fw-bold">2025 &bull; Wood Coffee &copy; Minden jog fenntartva! Üzemeltető szervezet: Mesterek</p>
             </div>
         </div>
     </footer>
