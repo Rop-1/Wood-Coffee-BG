@@ -1,0 +1,36 @@
+Wood Coffee Projektmunka
+Projektmunka elérhetősége:
+Github: https://github.com/Rop-1/Wood-Coffee-BG
+Trello: https://trello.com/b/qItQNGyC/wood-coffee
+Figma: https://www.figma.com/design/CBeN0IhfApBwoHzNsxazlL/Untitled?node-id=0-1&t=tS4oA7CKquWXtNtg-1
+Csapattagok:
+	Varga Gergő
+	Piroska Bálint
+
+Fejlesztői környezet:
+	Visual Studio Code
+	Chrome (Telefonos és Asztali környezetben használva)
+	Canva (grafikai elemek)
+
+Feladatok megosztása:
+	A weboldalt könnyű volt felosztani, de órán is rengeteget haladtunk a projektmunka kidologozásával. 
+	A Trello-t Bálint
+	A Figma-t Gergő
+	A Weboldalt pedig közösen készítettük el
+	A grafikus munkát a Canva AI-val készítettük el a Logó, Videó és a Kávé képeinek feljavítását végeztük el vele.
+	Weboldal lebontása részletesebben:
+		Navbar, Videó, Rólunk szekció Alap layout elkészítése Bálint jóvoltából
+		Galéria, Hírlevél, Footer, Profil, Kosár menüpontok, illetve a PDF ablak Gergő munkája
+		A mobilnézetet, illetve a tesztelést közösen vittük végre.
+Továbbfejlesztés:
+	A weboldal továbbfejlesztési lehetőségben előnyös állapotban van, mert minden rendezett és jól átlátható
+	Az oldalon még vannak nem elkészített elemek, ezért ezeket, mint fejlesztés még lehet bővíteni kiadás előtt.
+
+Önértékelés:
+	A közös munka nagyon gördülékenyen ment mint mindig, mert nagyon szeretünk egymással dolgozni :). 
+	A projekt jól sikerült, összességében egy szép letisztult modern és nem utolsó sorban reszponzív weboldalt tudtunk létrehozni
+
+
+
+
+
