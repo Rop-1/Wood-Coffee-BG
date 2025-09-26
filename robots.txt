@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://rop-1.github.io/Wood-Coffee-BG/sitemap.xml
