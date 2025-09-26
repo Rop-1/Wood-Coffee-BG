@@ -78,3 +78,7 @@ function responsive() {
   prof_form.addEventListener("input", () => {
     prof_confirmBtn.disabled = !prof_form.checkValidity();
   });
+
+  document.querySelectorAll("form").forEach(f => {
+  f.addEventListener("submit", e => e.preventDefault());
+});
